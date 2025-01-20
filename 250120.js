@@ -5,4 +5,4 @@ function solution(num1, num2){
 }
 
 console.log( solution(10,3)) 
-//3
+//3 출력
