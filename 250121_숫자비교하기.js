@@ -12,7 +12,6 @@ function solution(num1, num2) {
 
 // 3항연산자 참고 풀이
 function solution(num1, num2){
-
   var answer = num1 === num2 ? 1 : -1;
   return answer;
 }
