@@ -17,14 +17,9 @@ function solution(slice, n) {
 }
 
 // => 더 간단하게
-  function solution(slice, n) {
-    var answer = 0;
-    var calc = n / slice;
-      
-    answer = Math.ceil(calc);
-
-    return answer;
-  }
+function solution(slice, n) {
+  return Math.ceil(n / slice)
+}
 
   // =>> 더 간단하게
 const solution = (slice, n) => Math.ceil(n / slice)
