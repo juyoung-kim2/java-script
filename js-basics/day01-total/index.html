@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day01 - Total Calculator</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <main class="page">
+    <h1>총액 계산기</h1>
+
+    <div class="field">
+      <label for="price">가격</label>
+      <input id="price" type="number" value="12000" min="0" />
+    </div>
+
+    <div class="field">
+      <label for="qty">수량</label>
+      <input id="qty" type="number" value="1" min="0" />
+    </div>
+
+    <button id="calcBtn" class="btn">계산</button>
+
+    <p id="result" class="result">결과가 여기에 표시됩니다.</p>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
