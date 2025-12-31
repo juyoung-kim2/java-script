@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day02 - Input Validation</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <main class="page">
+    <h1 class="title">총액 계산기 (입력 검증)</h1>
+
+    <form class="card" onsubmit="return false;">
+      <div class="field">
+        <label for="price">가격</label>
+        <input id="price" type="number" inputmode="numeric" min="0" placeholder="예: 12000" />
+      </div>
+
+      <div class="field">
+        <label for="qty">수량</label>
+        <input id="qty" type="number" inputmode="numeric" min="0" placeholder="예: 2" />
+      </div>
+
+      <button id="calcBtn" class="btn" type="button">계산</button>
+
+      <p id="result" class="result" aria-live="polite">
+        가격과 수량을 입력해주세요.
+      </p>
+    </form>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

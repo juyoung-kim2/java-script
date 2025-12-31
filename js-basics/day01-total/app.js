@@ -19,7 +19,7 @@ calcBtn.addEventListener('click', ()=> {
  }else if (total === 0){
   msg = "가격/수량을 입력해주세요."
  } else {
-msg += "배송비가 발생할 수 있어요"
+  msg += "배송비가 발생할 수 있어요"
  }
 
  resultEl.textContent=msg;
