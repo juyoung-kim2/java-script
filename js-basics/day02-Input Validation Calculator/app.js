@@ -1,4 +1,4 @@
-//입력 검증 함수 : 가격 또는 수량이 빈값 / 0이하/ 숫자아니면 실패
+
 
 const calcBtn = document.getElementById('calcBtn');
 const result = document.getElementById('result');
