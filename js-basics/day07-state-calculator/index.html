@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Day06 State Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="container">
+    <h1 class="title">총액 계산기</h1>
+
+    <div class="form">
+      <label class="field">
+        <span>가격</span>
+        <input type="number" id="price" placeholder="가격을 입력하세요" />
+      </label>
+
+      <label class="field">
+        <span>수량</span>
+        <input type="number" id="qty" placeholder="수량을 입력하세요" />
+      </label>
+
+      <button id="calcBtn" class="btn">
+        계산하기
+      </button>
+    </div>
+
+    <p id="result" class="result"></p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
