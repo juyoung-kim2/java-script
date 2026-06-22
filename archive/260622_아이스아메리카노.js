@@ -8,6 +8,8 @@ function solution(money) {
   let americano = 5500;
   var qty = Math.floor(money / americano);
   var rest = money % americano;
+  //push값을 바로 리턴하면, 숫자 2라는 값을 반환함
+  //push 한 후, 그 값을 리턴하자
   answer.push(qty, rest);
   return answer;
 }
