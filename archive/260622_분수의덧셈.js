@@ -9,7 +9,7 @@ function solution(numer1, denom1, numer2, denom2) {
 
   //최대공약수 (유클리드 호제법)
   //a를 b로 나눈 나머지를 구한다 -> 나머지가 0이면, b가 최대공약수가 된다
-  //0이 아니면,a에 b를, b에 나머지를 할당하고 0이 될때까지 반복
+  //0이 아니면,a에 b를, b에 나머지를 할당하고 0이 될때까지 반복!
   function gcd(a, b) {
     if (b === 0) return a;
     return gcd(b, a % b);
