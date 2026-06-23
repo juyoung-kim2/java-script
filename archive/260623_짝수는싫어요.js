@@ -11,3 +11,16 @@ function solution(n) {
   }
   return answer;
 }
+
+// for문 자체를 홀수만 돌게 하기
+function solution(n) {
+  let answer = [];
+
+  // i가 1부터 시작해서 2씩 커지니까 (1, 3, 5, 7...) 무조건 홀수만 나옴
+  // 그럼 if문 안써도 됨!!
+  for (let i = 1; i <= n; i += 2) {
+    answer.push(i);
+  }
+
+  return answer;
+}
