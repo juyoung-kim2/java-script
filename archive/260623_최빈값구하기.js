@@ -27,7 +27,9 @@ function solution(array) {
     }),
     {},
   ); //{1:1, 2:1, 3:3, 4:1} 처럼 출력
+  //밸류값에서 최대값 구하기
   const max = Math.max(...Object.values(counter));
+  //최대값이랑 일치하는 키값 구하기
   const modes = Object.keys(counter).filter((key) => counter[key] === max);
   // + 문자를 숫자로 바꾸는 방법
   // Number(modes[0])
