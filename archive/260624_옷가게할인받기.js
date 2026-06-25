@@ -3,14 +3,14 @@
 
 function solution(price) {
   const answer =
-    100000 <= price < 300000
+    100000 <= price && price < 300000
       ? price * 0.95
-      : 300000 <= price < 500000
+      : 300000 <= price && price < 500000
         ? price * 0.9
         : price >= 500000
           ? price * 0.8
           : price;
-  return answer;
+  return Math.trunc(answer);
 }
 
-console.log(solution(400000));
+console.log(solution(580000));
