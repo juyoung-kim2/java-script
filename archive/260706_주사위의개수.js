@@ -10,7 +10,7 @@ function solution(box, n) {
   return total;
 }
 
-// 축약
+// 축약, i 안쓰니까 생략 가능
 function solution2(box, n) {
   return box.map((v) => Math.floor(v / n)).reduce((acc, crr) => acc * crr, 1);
 }
