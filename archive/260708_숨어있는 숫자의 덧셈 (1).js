@@ -5,3 +5,6 @@ function solution(my_string) {
   const NumArray = my_string.match(/\d/g).map(Number);
   return NumArray.reduce((acc, crr) => acc + crr, 0);
 }
+
+// 예외 처리 : 숫자 없는 경우, 빈 배열
+// const NumArray = (my_string.match(/\d/g) || []).map(Number);
