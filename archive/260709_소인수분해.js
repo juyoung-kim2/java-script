@@ -17,4 +17,4 @@ function solution(n) {
   return (uniq = [...new Set(factors)].sort((a, b) => a - b));
 }
 
-// 어차피 작은 수 -> 큰 수로 검사하기 때문에 sort는 필요 없음
+// 어차피 작은 수 -> 큰 수로 검사하기 때문에 sort는 필요 없음!
