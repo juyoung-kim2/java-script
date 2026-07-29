@@ -4,9 +4,17 @@
 //캐릭터는 항상 [0,0]에서 시작할 때 키 입력이 모두 끝난 뒤에 캐릭터의 좌표 [x, y]를 return하도록 solution 함수를 완성해주세요.
 
 function solution(keyinput, board) {
-  var answer = [];
-  return answer;
-}
+  let x = 0;
+  let y = 0;
 
-const keyinput = ["left", "right", "up", "right", "right"];
-const board = [11, 11];
+  const maxX = Math.floor(board[0] / 2);
+  const maxY = Math.floor(board[1] / 2);
+  for (let key of keyinput) {
+    if (key === "left" && x > -maxX) x--;
+    if (key === "right" && x < maxX) x++;
+    if (key === "up" && y < maxY) y++;
+    if (key === "down" && y > -maxY) y--;
+  }
+
+  return [x, y];
+}
